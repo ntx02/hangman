@@ -1,7 +1,7 @@
-import random
+import random, string
 wordbank = ['fuzzy', 'hair', 'trade', 'substance', 'wind', 'zoo', 'scared', 'multiply', 'enthusiastic', 'building', 'gusty', 'jewel', 'sordid', 'joke', 'admire', 'useless', 'view', 'cushion', 'glow', 'peep', 'consider', 'simplistic', 'neck', 'tramp', 'rose']
-letter_bank = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+letter_bank = [x for x in string.ascii_uppercase()]
+uppercase = letter_bank
 inputword = random.choice(wordbank)
 letterlist = [letter for letter in inputword]
 newlist = letterlist
